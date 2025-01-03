@@ -37,8 +37,8 @@ class OpenApiApplicationTests {
 		assertNotNull(response.getResponse());
 		final byte[] file = response.getResponse().getContentAsByteArray();
 		assertNotEquals(0, file.length);
-		try (final FileOutputStream fos = new FileOutputStream("openapi.yaml")) {
-			fos.write(file);
-		}
+		try (final FileOutputStream fos = new FileOutputStream("src\\main\\resources\\openapi.yaml")) {
+	            fos.write(file);
+	        }
 	}
 }
