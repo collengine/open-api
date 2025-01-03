@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Project') {
             steps {
-                forget 'My fisrt plugin'
+                getApiDocumentation 'open-api-v1'
             }
         }
     }
